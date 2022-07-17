@@ -4,18 +4,18 @@ public class Main {
         BmiService servise = new BmiService();
         Scanner num = new Scanner(System.in);
 
-        double Height, Weight;
+        double height, weight;
 
         System.out.println("\nПриложение для расчета Индекса Массы Тела");
 
         System.out.print("\nВведите рост  (в метрах через запятую):");
-        Height = num.nextDouble();
+        height = num.nextDouble();
 
         System.out.print("\nВведите вес (в килогграммах через запятую):");
-        Weight = num.nextDouble();
+        weight = num.nextDouble();
 
-        Double Bmi = servise.Bmi(Height, Weight);
+        Double bmi = servise.bmi(height, weight);
 
-        System.out.println("\nИндекс Массы Тела: " + Bmi);
+        System.out.println("\nИндекс Массы Тела: " + bmi);
     }
 }
